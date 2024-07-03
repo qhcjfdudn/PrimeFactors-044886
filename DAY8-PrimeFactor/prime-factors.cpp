@@ -3,12 +3,10 @@ using namespace std;
 
 class PrimeFactor {
 public:
-	vector<int> of(int n) {
+	vector<int> of(int number) {
 		vector<int> result = {};
-		if (n == 2)
-			result.push_back(2);
-		if (n == 3)
-			result.push_back(3);
+		if (number > 1)
+			result.push_back(number);
 
 		return result;
 	}
